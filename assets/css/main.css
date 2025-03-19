@@ -1961,3 +1961,98 @@ td.comfort-break {
   margin-left: auto; /* Sposta l'elemento verso destra */
   margin-right: auto; /* Centra l'elemento */
 }
+
+/* Keynote section styling */
+.keynotes.section.light-background {
+  background-color: #ffffff;
+}
+
+.keynote-container {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.keynote-grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.keynote-name {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.keynote-name h4 {
+  margin-bottom: 0.25rem;
+  color: #005cab;
+  font-weight: 600;
+}
+
+.keynote-name .institution {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.keynote-title {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.keynote-title h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.keynote-photo {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.keynote-photo img {
+  max-width: 90%;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.keynote-abstract {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .keynote-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  
+  .keynote-name, .keynote-title, .keynote-photo, .keynote-abstract {
+    grid-column: 1;
+    padding-left: 0;
+  }
+  
+  .keynote-name { 
+    grid-row: 1; 
+    text-align: center;
+  }
+  .keynote-photo { 
+    grid-row: 2; 
+    justify-content: center;
+  }
+  .keynote-title { grid-row: 3; }
+  .keynote-abstract { grid-row: 4; }
+}
