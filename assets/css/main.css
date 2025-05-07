@@ -855,6 +855,13 @@ section,
   position: relative;
 }
 
+.section-title-d h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+
 .section-title-c {
   text-align: center;
   padding-bottom: 6px;
