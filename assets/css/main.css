@@ -849,6 +849,12 @@ section,
   position: relative;
 }
 
+.section-title-d {
+  text-align: center;
+  padding-bottom: 6px;
+  position: relative;
+}
+
 .section-title-c {
   text-align: center;
   padding-bottom: 6px;
@@ -2055,4 +2061,25 @@ td.comfort-break {
   }
   .keynote-title { grid-row: 3; }
   .keynote-abstract { grid-row: 4; }
+}
+
+/* Pulsante personalizzato per la registrazione al workshop */
+.workshop-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.workshop-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+  text-decoration: none;
 }
