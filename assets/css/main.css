@@ -1965,14 +1965,23 @@ td.comfort-break {
   gap: 20px; /* Spaziatura tra le colonne */
 }
 
-.col-lg-6 {
-  flex: 0 0 calc(50% - 20px); /* Ogni elemento occupa il 50% meno la spaziatura */
-  box-sizing: border-box;
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 calc(50% - 20px); /* Ogni elemento occupa il 50% meno la spaziatura */
+    box-sizing: border-box;
+  }
+
+  .last-item {
+    margin-left: auto; /* Sposta l'elemento verso destra */
+    margin-right: auto; /* Centra l'elemento */
+  }
 }
 
-.last-item {
-  margin-left: auto; /* Sposta l'elemento verso destra */
-  margin-right: auto; /* Centra l'elemento */
+@media (max-width: 991.98px) {
+  .col-lg-6 {
+    flex: 0 0 100%; /* Sotto i 992px ogni box occupa tutta la riga */
+    box-sizing: border-box;
+  }
 }
 
 /* Keynote section styling */
