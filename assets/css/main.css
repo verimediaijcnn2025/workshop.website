@@ -269,7 +269,7 @@ h6 {
   line-height: 0px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1399.98px) {
   .header .logo {
     order: 1;
   }
@@ -297,7 +297,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .navmenu {
     padding: 0;
   }
@@ -317,7 +317,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 18px 15px;
+    padding: 18px 10px;
     font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -404,7 +404,7 @@ h6 {
 }
 
 /* Navmenu - Mobile */
-@media (max-width: 1199px) {
+@media (max-width: 1399.98px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -832,7 +832,7 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399.98px) {
 
   section,
   .section {
